@@ -123,32 +123,32 @@ Assignment3_1/fast:
 	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/build
 .PHONY : Assignment3_1/fast
 
-main.o: main.cpp.o
+a3_1.o: a3_1.cpp.o
 
-.PHONY : main.o
+.PHONY : a3_1.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/main.cpp.o
-.PHONY : main.cpp.o
+a3_1.cpp.o:
+	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/a3_1.cpp.o
+.PHONY : a3_1.cpp.o
 
-main.i: main.cpp.i
+a3_1.i: a3_1.cpp.i
 
-.PHONY : main.i
+.PHONY : a3_1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/main.cpp.i
-.PHONY : main.cpp.i
+a3_1.cpp.i:
+	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/a3_1.cpp.i
+.PHONY : a3_1.cpp.i
 
-main.s: main.cpp.s
+a3_1.s: a3_1.cpp.s
 
-.PHONY : main.s
+.PHONY : a3_1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/main.cpp.s
-.PHONY : main.cpp.s
+a3_1.cpp.s:
+	$(MAKE) -f CMakeFiles/Assignment3_1.dir/build.make CMakeFiles/Assignment3_1.dir/a3_1.cpp.s
+.PHONY : a3_1.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Assignment3_1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... a3_1.o"
+	@echo "... a3_1.i"
+	@echo "... a3_1.s"
 .PHONY : help
 
 

@@ -57,27 +57,27 @@ include CMakeFiles/Assignment3_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Assignment3_1.dir/flags.make
 
-CMakeFiles/Assignment3_1.dir/main.cpp.o: CMakeFiles/Assignment3_1.dir/flags.make
-CMakeFiles/Assignment3_1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexhughes/CLionProjects/Assignment3.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment3_1.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment3_1.dir/main.cpp.o -c /Users/alexhughes/CLionProjects/Assignment3.1/main.cpp
+CMakeFiles/Assignment3_1.dir/a3_1.cpp.o: CMakeFiles/Assignment3_1.dir/flags.make
+CMakeFiles/Assignment3_1.dir/a3_1.cpp.o: ../a3_1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexhughes/CLionProjects/Assignment3.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment3_1.dir/a3_1.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment3_1.dir/a3_1.cpp.o -c /Users/alexhughes/CLionProjects/Assignment3.1/a3_1.cpp
 
-CMakeFiles/Assignment3_1.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment3_1.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexhughes/CLionProjects/Assignment3.1/main.cpp > CMakeFiles/Assignment3_1.dir/main.cpp.i
+CMakeFiles/Assignment3_1.dir/a3_1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment3_1.dir/a3_1.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexhughes/CLionProjects/Assignment3.1/a3_1.cpp > CMakeFiles/Assignment3_1.dir/a3_1.cpp.i
 
-CMakeFiles/Assignment3_1.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment3_1.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexhughes/CLionProjects/Assignment3.1/main.cpp -o CMakeFiles/Assignment3_1.dir/main.cpp.s
+CMakeFiles/Assignment3_1.dir/a3_1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment3_1.dir/a3_1.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexhughes/CLionProjects/Assignment3.1/a3_1.cpp -o CMakeFiles/Assignment3_1.dir/a3_1.cpp.s
 
 # Object files for target Assignment3_1
 Assignment3_1_OBJECTS = \
-"CMakeFiles/Assignment3_1.dir/main.cpp.o"
+"CMakeFiles/Assignment3_1.dir/a3_1.cpp.o"
 
 # External object files for target Assignment3_1
 Assignment3_1_EXTERNAL_OBJECTS =
 
-Assignment3_1: CMakeFiles/Assignment3_1.dir/main.cpp.o
+Assignment3_1: CMakeFiles/Assignment3_1.dir/a3_1.cpp.o
 Assignment3_1: CMakeFiles/Assignment3_1.dir/build.make
 Assignment3_1: CMakeFiles/Assignment3_1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexhughes/CLionProjects/Assignment3.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Assignment3_1"

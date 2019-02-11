@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/alexhughes/CLionProjects/Assignment3.1/main.cpp">
+		<Unit filename="/Users/alexhughes/CLionProjects/Assignment3.1/a3_1.cpp">
 			<Option target="Assignment3_1"/>
 		</Unit>
 		<Unit filename="/Users/alexhughes/CLionProjects/Assignment3.1/CMakeLists.txt">
