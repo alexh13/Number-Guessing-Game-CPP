@@ -12,6 +12,57 @@ inclusive. The program will make guesses and the user will tell the program to g
 #include <time.h>
 
 using namespace std;
+int maxGuess, minGuess, firstPoint, secondPoint, ran, norm, guess;
+char userInput, userAnswer, again;
+
+// Midpoint
+int getMidpoint(int firstPoint, int secondPoint) {
+    return (firstPoint + secondPoint) / 2;
+}
+
+
+// Random number between two ints
+int getRandomMidpoint(int maxGuess, int minGuess) {
+    srand(static_cast<int>(time(0)));
+    return rand() % ((maxGuess - minGuess) + 1) + minGuess;
+}
+
+
+// user input
+char getUserResponseToGuess (int guess) {
+    cout << "Is it: "<< guess << "?\n Higher, lower, or correct? (h/l/c): ";
+    char userAnswer;
+    cin >> userAnswer;
+    return userAnswer;
+}
+
+
+// Setting up a game
+void playOneGame() {
+    int maxGuess = 100;
+    int minGuess = 1;
+
+    cout << "Think of a number between 1 and 100" << endl;
+
+    do {
+        int ran = getRandomMidpoint(maxGuess, minGuess);
+        int norm = getMidpoint(maxGuess, minGuess);
+        char userInput = getUserResponseToGuess(norm);
+
+        if (userInput == 'h')
+            minGuess = norm;
+
+        else if (userInput == 'l')
+            maxGuess = norm;
+
+        else if (userInput == 'c') {
+            cout << endl;
+            break;
+        }
+
+    } while (userInput != 'c');
+    }
+
 
 // ask user if they want to play again
 bool askPlayAgain() {
@@ -20,43 +71,6 @@ bool askPlayAgain() {
     cin >> again;
     return (again == 'y');
 }
-
-
-// get user input
-char getUserInputfromGuess (int guess) {
-    cout << "Is it: "<< guess << "?\n Higher, lower, or correct? (h/l/c): ";
-    char answer;
-    cin >> answer;
-    return answer;
-}
-
-
-// Midpoint between two ints
-int getMidpoint(int first, int second) {
-    return (first + second) / 2;
-}
-
-
-// Random number between two ints
-
-
-
-// Setting up a game
-void playOneGame() {
-    int max = 100;
-    int min = 0;
-    char input;
-
-    cout << "Think of a number between 1 and 100" << endl;
-
-    do {
-        int ran = getRandomMidpoint(max, min)
-
-
-    }
-
-}
-
 
 int main() {
     char response;
