@@ -9,31 +9,24 @@ inclusive. The program will make guesses and the user will tell the program to g
 
 #include <iostream>
 #include <string>
-#include <time.h>
 
 using namespace std;
-int maxGuess, minGuess, firstPoint, secondPoint, ran, norm, guess;
-char userInput, userAnswer, again;
-
-// Midpoint
-int getMidpoint(int firstPoint, int secondPoint) {
-    return (firstPoint + secondPoint) / 2;
-}
+char userInput;
 
 
-// Random number between two ints
-int getRandomMidpoint(int maxGuess, int minGuess) {
-    srand(static_cast<int>(time(0)));
-    return rand() % ((maxGuess - minGuess) + 1) + minGuess;
-}
-
-
-// user input
+// Get user input
 char getUserResponseToGuess (int guess) {
-    cout << "Is it: "<< guess << "?\n Higher, lower, or correct? (h/l/c): ";
     char userAnswer;
+
+    cout << "Is it: "<< guess << "?\n higher, lower, or correct? (h/l/c): ";
     cin >> userAnswer;
     return userAnswer;
+}
+
+
+// Midpoint
+int getMidpoint(int low, int high) {
+    return (low + high) / 2;
 }
 
 
@@ -45,7 +38,6 @@ void playOneGame() {
     cout << "Think of a number between 1 and 100" << endl;
 
     do {
-        int ran = getRandomMidpoint(maxGuess, minGuess);
         int norm = getMidpoint(maxGuess, minGuess);
         char userInput = getUserResponseToGuess(norm);
 
@@ -60,18 +52,13 @@ void playOneGame() {
             break;
         }
 
-    } while (userInput != 'c');
+    }
+
+    while (userInput != 'c');
     }
 
 
-// ask user if they want to play again
-bool askPlayAgain() {
-    cout << "Would you like to play again?\n(y/n): ";
-    char again;
-    cin >> again;
-    return (again == 'y');
-}
-
+// Run game
 int main() {
     char response;
 
@@ -83,3 +70,21 @@ int main() {
         cin >> response;
     }
 }
+
+/*
+Output:
+Ready to play (y/n)? y
+Think of a number between 1 and 100
+Is it: 50?
+ higher, lower, or correct? (h/l/c): h
+Is it: 75?
+ higher, lower, or correct? (h/l/c): h
+Is it: 87?
+ higher, lower, or correct? (h/l/c): h
+Is it: 93?
+ higher, lower, or correct? (h/l/c): h
+Is it: 96?
+ higher, lower, or correct? (h/l/c): c
+
+Great! Do you want to play again (y/n)? n
+ */
